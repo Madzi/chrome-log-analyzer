@@ -1,0 +1,63 @@
+/*table.log.analyzer {
+  table-layout: fixed;
+  width: 100%;
+  border: 1px #ccc solid;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #444;
+  font-size: 9pt;
+  font-family: Consolas, monospace;
+}
+
+table.log.analyzer th,
+table.log.analyzer td {
+  vertical-align: top;
+  padding: 0 0.5em;
+}
+
+table.log.analyzer th {
+  background: #eee;
+  border-right: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+  text-align: left;
+  font-weight: bold;
+}
+
+table.log.analyzer td {
+  word-wrap: break-word;
+}
+
+table.log.analyzer th.log.logger,
+table.log.analyzer th.log.date,
+table.log.analyzer th.log.level,
+table.log.analyzer th.log.thread,
+table.log.analyzer th.log.code {
+  min-width: 14em;
+  width: 14em;
+  max-width: 20em;
+}
+*/
+table.log.analyzer {
+  width: 100%;
+  color: #444;
+  border: 1px solid silver;
+  border-collapse: collapse;
+  font-size: 10pt;
+}
+
+table.log.analyzer thead th {
+  white-space: nowrap;
+  background-color: #eee;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  text-align: left;
+}
+
+table.log.analyzer tbody tr.log.all { background-color: white; }
+table.log.analyzer tbody tr.log.trace { background-color: mintcream; }
+table.log.analyzer tbody tr.log.debug { background-color: turquoise; }
+table.log.analyzer tbody tr.log.info { background-color: palegreen; }
+table.log.analyzer tbody tr.log.warn { background-color: gold; }
+table.log.analyzer tbody tr.log.error { background-color: orange; }
+table.log.analyzer tbody tr.log.fatal { background-color: salmon; }
+table.log.analyzer tbody tr.text { background-color: moccasin; }

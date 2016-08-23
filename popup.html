@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .la-table {
+        width: 100%;
+        /*table-layout: fixed;*/
+        border: 1px #ccc solid;
+        /*border-collapse: collapse;*/
+        border-spacing: 0;
+        color: #444;
+        font-size: 9pt;
+        font-family: Consolas, monospace;
+      }
+      .la-table th {
+        background: #eee;
+        border-right: 1px #ccc solid;
+        border-bottom: 1px #ccc solid;
+        text-align: left;
+        font-weight: bold;
+      }
+      .la-table .logger {
+        width: 12em;
+      }
+    </style>
+  </head>
+  <body style="width:600px">
+    <p>You can add new logger to system.</p>
+    <table class="la-table">
+      <caption>Known loggers</caption>
+      <thead>
+        <tr>
+          <th class="logger">Logger</th>
+          <th class="probe">Probe</th>
+          <th class="groups">Groups</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Simple logger</td>
+          <td>/(.*)/</td>
+          <td>message</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
